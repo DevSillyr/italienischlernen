@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Italienisch Klassenarbeit</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -25,7 +25,10 @@
      <canvas id="confetti"></canvas>
 
      <!-- Answer -->
-     <input type="text" name="answer" placeholder="Antwort kommt hier rein..." required id="answer">
+      <div id="fortnite">
+        <label for="answer">Antwort: </label>
+        <input type="text" name="answer" required id="answer">
+      </div>
 
      <!-- Submit -->
       <button type="button" name="submit" id="submit" onclick="onPress()">
@@ -38,6 +41,6 @@
     </h2>
 
     <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
-    <script src="stuff.js"></script>
+    <script src="/stuff.js"></script>
 </body>
 </html>
