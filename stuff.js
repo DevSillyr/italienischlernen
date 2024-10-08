@@ -101,6 +101,8 @@ window.onload = function() {
     }
     
     function generateQuestion() {
+        document.getElementById("answer").value = ""
+
         let randomNumber = getRandomNumber(4)
     
         let randomNumber2 = getRandomNumber(6)
@@ -129,7 +131,7 @@ window.onload = function() {
     }
 
     function onPress() {
-        let hehe = document.getElementById("answer").value
+        let hehe = String(document.getElementById("answer").value).toLowerCase()
 
         if(hehe == newestAnswer) {
             jsConfetti.addConfetti()
