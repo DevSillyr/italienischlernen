@@ -33,6 +33,7 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
     border-width: 0px;
+    
     justify-content: center;
     align-items: center;
     display: flex	;
@@ -43,6 +44,10 @@
 
 #answer:focus {
     border-width: 0px;
+}
+
+#answer, textarea {
+    background-color: gray;
 }
 
 #submit {
