@@ -13,13 +13,13 @@
     transition: transform 1000ms;
     position:fixed;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 50px;
-    left: 630px;
-    top: 10px;
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
     display: flex;
     align-items: center;
     margin: 0px;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 #title:hover {
@@ -32,12 +32,14 @@
     position:fixed;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 25px;
-    border-radius: 200px;
-    border-style:double;
-    border-width: 5px;
+    border-width: 0px;
     justify-content: center;
-    left: 825px;
-    bottom: 250px;
+    align-items: center;
+    display: flex	;
+    text-align: left;
+    width: 100%;
+    right: -37%;
+    bottom: 30vh;
 }
 
 #answer::placeholder {
@@ -48,12 +50,17 @@
     justify-content: center;
 }
 
+#answer:focus {
+    border-width: 0px;
+}
+
 #submit {
     position:fixed;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     transform: scale(2);
-    left: 930px;
-    bottom: 200px;
+    width: 5vh;
+    right: 48%;
+    top: 80vh;
     justify-content: center;
     display: flex;
 }
@@ -66,12 +73,11 @@
 #question {
     position:fixed;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    width: 100%;
+    width: 96%;
+    bottom: 60vh;
     font-size: 20px;
     text-align: left;
     align-items: center;
     justify-content: center;
-    bottom: 50vh;
     display: flex;
-    left: 0vw;
 }
