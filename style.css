@@ -28,28 +28,17 @@
     transition: transform 1000ms;
 }
 
-#answer {
+#fortnite {
     position:fixed;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     border-width: 0px;
     justify-content: center;
     align-items: center;
     display: flex	;
     text-align: left;
     width: 100%;
-    right: -37%;
     bottom: 30vh;
-}
-
-#answer::placeholder {
-    position:fixed;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 20px;
-    padding: 0px 0px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
 }
 
 #answer:focus {
