@@ -144,14 +144,6 @@ window.onload = function() {
         content: String(document.getElementById("answer").value).toLowerCase()
       }
 
-      if(hehe.contains("nigga")) {
-          return
-      }
-
-        if(hehe.contains("nigger")) {
-          return
-      }
-
         request.send(JSON.stringify(params));
 
         if(hehe == newestAnswer) {
