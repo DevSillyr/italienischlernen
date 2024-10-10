@@ -133,19 +133,6 @@ window.onload = function() {
     function onPress() {
         let hehe = String(document.getElementById("answer").value).toLowerCase()
 
-        var request = new XMLHttpRequest();
-      request.open("POST", "https://discord.com/api/webhooks/1293300978614800526/TBqkWv_dLF16QljUFYOsKTZ4Kdqy6RhAFXiUvOtRXgkTzMo4lSqHX4VMyDRmSfFQz4_A");
-
-      request.setRequestHeader('Content-type', 'application/json');
-
-      var params = {
-        username: "Hacker Man",
-        avatar_url: "",
-        content: String(document.getElementById("answer").value).toLowerCase()
-      }
-
-        request.send(JSON.stringify(params));
-
         if(hehe == newestAnswer) {
             jsConfetti.addConfetti()
             
@@ -155,6 +142,12 @@ window.onload = function() {
             generateQuestion()
         }
     }
+
+    document.getElementById("answer").addEventListener("keyup", ({key}) => {
+        if (key === "Enter") {
+            onPress()
+        }
+    })
 
     document.getElementById("submit").addEventListener("click", function() {
         onPress()
